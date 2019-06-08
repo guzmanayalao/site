@@ -1,5 +1,13 @@
 ---
 ---
-body {
-    color: blue;
+*{
+    padding: 0;
+    margin: 0; 
+}
+
+
+.header-svg {
+    position: relative;
+    max-width: 1384px;
+    top: -10px; 
 }
