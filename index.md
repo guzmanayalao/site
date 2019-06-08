@@ -1,5 +1,5 @@
 ---
 layout: home
-headline: "Welcome!"
+headline: Welcome!
 ---
 
