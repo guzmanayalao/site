@@ -10,14 +10,11 @@
 </head>
 
 <body>
-    <header>
-        {% comment %}
-        <div class="header-svg">
-            {% include header-images-blob.html %} 
-        </div>
-        {% endcomment %}
-        <h1> {{page.headline}} </h1>
-    </header>
+    <main>
+        {% include _header.html %}
+        {% include _ourServices.html %}
+
+    </main>
 </body>
 
 </html>
