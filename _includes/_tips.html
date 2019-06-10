@@ -8,15 +8,14 @@
             <p> {{ page.ourServicesSectionBlurb }}</p>
         </header>
         <div class="card-flex-wrapper">
-            {% for post in site.posts %} {
+            {% for post in site.posts %} 
                 <div class="ourServices-card">
-                <span class="card-number-container">1</span> 
-                <h3>{{ post.title }}</h3>
-                <p> {{ post.date }} </p>
-                <p> {{ content }}</p>
-            </div>
-            }   
-            
+                    <h3>{{ post.title }}</h3>
+                    <p> {{post.date | date_to_string }} </p>
+                    <div class="image">  </div>
+                    <div class="content"> {{ post.content | markdownify }}</div>
+                </div>     
+            {% endfor %}
         </div>
         
     </div>

@@ -9,7 +9,7 @@ section#tips {
         text-align: center; 
         margin-bottom: 2rem;
     } 
-    p {
+    div.content {
         font-size: 2rem;
         line-height: 2; 
         text-align: center; 
@@ -64,7 +64,7 @@ section#tips {
         }
         p {
             font-size: 1rem; 
-            padding: 3rem;
+            padding: 1rem 3rem;
             text-align: left;
 
         }
