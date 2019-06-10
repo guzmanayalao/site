@@ -1,3 +1,4 @@
+
 <section id="ourResults">
     <div class="mw77">
         <header>
@@ -6,41 +7,20 @@
         <p>{{ page.ourResultsSectionBlurb }}</p>
 
         <div class="slick-container">
+            {% for project in site.work%}
             <article>
                 <header>
-                    <h3>Project Name</h3>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, nihil facilis voluptas iste ab inventore impedit consequuntur sint voluptatum laboriosam ea quae aperiam voluptate tempore similique totam. Quasi, dolores at? </p>
+                    <h3>{{ project.title}}</h3>
+                    {{ project.content | markdownify }}
                     <a href="">Project Link</a>
 
                 </header>
                 <div>
-                    <img src="{{ site.baseurl }}/assets/images/work1.png" alt="">
+                    <img src="{{ site.baseurl }}{{ project.Images }}" alt="">
                 </div>
             </article>
-            <article>
-                <header>
-                    <h3>Project Name </h3>
-                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium reiciendis incidunt, praesentium dicta totam voluptate, atque quia ad tenetur veritatis quam repellendus ex ea dignissimos iusto, officiis tempora voluptatem earum? </p>
-                    <a href="">Project Link</a>
-
-                </header>
-                <div>
-                    <img src="{{ site.baseurl }}/assets/images/work1.png" alt="">
-                </div>
-
-            </article>
-            <article>
-                <header>
-                    <h3>Project Name </h3>
-                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium reiciendis incidunt, praesentium dicta totam voluptate, atque quia ad tenetur veritatis quam repellendus ex ea dignissimos iusto, officiis tempora voluptatem earum? </p>
-                    <a href="#">Project Link</a>
-
-                </header>
-                <div>
-                    <img src="{{ site.baseurl }}/assets/images/work1.png" alt="">
-                </div>
-
-            </article>
+            {% endfor %}
+            
 
         </div>
     </div>

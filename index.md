@@ -27,6 +27,10 @@ card3_blurb: 'If you have a website already, let us help you reach the people yo
   need. A website isn''t any good if people can''t find it. Let''s get you set up
   with results-driven digital marketing. We offer Google Ads (Search and Display),
   Facebook, Instagram, Twitter, and SnapChat marketing.  '
+whoWeAreSectionTitle: Who We Are
+whoWeAreSectionBlurb: We're a modern and affordable digital marketing consultancy in Chicago, IL. We're all about making sure our clients needs are met and justified with modern results driven solutions. Our mission is to help small businesses and individuals in Chicago create and maintain a successful digital presence. It is in our mission to make sure we are helping low-income areas that are being challenged by gentrification and corporations. 
+tipsSectionTitle: Free Marketing Tips
+tipsSectionBlurb: We constantly update our free marketing articles. We believe in transparency and sharing our successes and failures. Feel free to follow us on social media to stay posted! 
 layout: home
 ---
 

@@ -1,6 +1,18 @@
 section#whoWeAre {
     padding: 2rem; 
     background: $blueGradient; 
+    position: relative;
+
+    > img {
+        position: absolute; 
+        max-width: 1560px;
+        bottom: 100%; 
+        opacity: 0.45;
+        z-index: -1;
+        right: -40rem;
+        
+        
+    }
     header {
         padding: 2rem; 
         color: white;
