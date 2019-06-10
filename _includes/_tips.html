@@ -5,21 +5,15 @@
             <p> {{ page.ourServicesSectionBlurb }}</p>
         </header>
         <div class="card-flex-wrapper">
-            <div class="ourServices-card">
+            {% for post in site.posts %} {
+                <div class="ourServices-card">
                 <span class="card-number-container">1</span> 
-                <h3>{{ page.card1_title }}</h3>
-                <p> {{ page.card1_blurb }}</p>
+                <h3>{{ post.title }}</h3>
+                <p> {{ post.date }} </p>
+                <p> {{ content }}</p>
             </div>
-            <div class="ourServices-card">
-                <span class="card-number-container">2</span>
-                <h3>{{ page.card2_title }}</h3>
-                <p> {{ page.card2_blurb }}</p>
-            </div>
-            <div class="ourServices-card">
-                <span class="card-number-container">3</span>
-                <h3>{{ page.card3_title }}</h3>
-                <p> {{ page.card3_blurb }}</p>
-            </div>
+            }   
+            
         </div>
         
     </div>
