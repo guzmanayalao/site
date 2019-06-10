@@ -12,10 +12,11 @@ ourResultsSectionTitle: Our Results
 ourResultsSectionBlurb: "We're a new company and we're growing alongside you. But
   we practice what we preach--anything we're doing to grow Site will be used to grow
   your business. (We bet you found us on social media or google ads? \U0001F609)"
-card1_title: Design
-card1_blurb: 'No matter your business, we have you covered. Small portfolio website?
-  Check. Business landing page? Check. Ecommerce site? Check. (We even leverage Shopify''s
-  robust but simple platform to give you a custom solution.) '
+card1_title: Design & Branding
+card1_blurb: 'Result-driven design and branding make a difference. Your business needs
+  to look great online and communicate your message appropriately. Whether you need
+  a logo or an E-Commerce website design, we can help you. (We even leverage Shopify''s
+  robust but simple platform to give you a custom E-commerce solution.) '
 card2_title: Web Development
 card2_blurb: 'We understand compatibility and SEO. Yes, we use the latest and greatest
   in tech, but we never put that ahead of your potential customers. We offer compatible,
