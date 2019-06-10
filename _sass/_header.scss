@@ -1,0 +1,84 @@
+
+
+#header {
+    position: relative; 
+    height: 100vh; 
+    background-image: url('#{$baseurl}/assets/images/header-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    .header-svg {
+        position: absolute;
+        width: 100%;
+        z-index: 1; 
+        top: -1rem;
+        
+        svg {
+            max-width: 1283px;
+        }
+        .headline-wrapper {
+            position: absolute;
+            z-index: 2;
+            top: 40%;
+            left: 10%;  
+            padding: 2rem;
+            box-sizing: border-box;
+            color: white;
+
+            h1 {
+                font-size: 4rem;
+                max-width: 800px;
+            }
+            h2 {
+                margin-top: 1rem;
+                font-size: 1rem;
+                font-weight: 300; 
+            }
+        }
+    
+    
+    }
+    #signup {
+        position: absolute;
+        bottom: 0; 
+        left: 0;
+        right: 0; 
+        width: 100%;
+        background: $blueGradient; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 0;
+        flex-direction: column;
+        form {
+            display: flex; 
+            width: 35%;
+            margin: auto; 
+            input[type='email'] {
+                height: 3rem;
+                width: 100%; 
+                border-radius: 1rem 0 0 1rem;
+                border: none; 
+                padding: 1rem;  
+            }
+            input[type='submit'] {
+                background: #FFBB00; 
+                border: none;
+                outline: none;
+                padding: 0 2rem;
+                color: white;
+                font-weight: bold; 
+                border-radius: 0 1rem 1rem 0; 
+                text-transform: uppercase;
+            }
+        }
+
+        h3 {
+            padding-bottom: 1.5rem;
+            font-size: 1.5rem;
+            color: white; 
+        }
+    }
+
+    
+    
+}
