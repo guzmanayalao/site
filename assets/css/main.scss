@@ -2,23 +2,31 @@
 ---
 
 $blueGradient: linear-gradient(to bottom, rgba(0,144,255,1) 0%,rgba(0,185,255,1) 100%);
+$blueGradientTrans: linear-gradient(to bottom, rgba(0,144,255,0.4) 0%,rgba(0,185,255,0.4) 100%);
+$blueGradientTrans2: linear-gradient(to bottom, rgba(0,144,255,0.8) 0%,rgba(0,185,255,0.8) 100%);
+
+
 $blue: rgb(0,144,255); 
 $baseurl: "{{ site.baseurl }}";
 
 body {
     color:#434343;
     font-family: 'Source Sans Pro', sans-serif;
-
-
+    
+    
     main 
     {
         position: relative;
         width: 100%;
         overflow: hidden; 
-        
+                    
     }
     
 }
+.body-menu-active {
+    overflow: hidden;
+}
+
 *{
     padding: 0;
     margin: 0; 
@@ -27,6 +35,9 @@ body {
 .mw77 {
     max-width: 77rem; 
     margin: auto;
+    @media screen and (max-width: 77rem) {
+        padding: 2rem; 
+    }
 }
 
 
@@ -35,7 +46,9 @@ body {
 @import "_ourServices.scss"; 
 @import "_ourResults.scss"; 
 @import "_whoWeAre.scss"; 
-@import "_tips.scss"; 
+@import "_tips.scss";
+@import "_footer.scss"; 
+
 
 
 

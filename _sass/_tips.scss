@@ -1,5 +1,5 @@
 section#tips {
-    padding-top: 10rem;
+    padding-top: 5rem;
     
     header {
         margin-bottom: 5rem; 
@@ -8,6 +8,12 @@ section#tips {
             line-height: 2; 
             text-align: center; 
             margin-bottom: 2rem;
+            @media screen and (max-width: 480px){
+                font-size: 1rem; 
+    
+               
+                
+            }
     
         }
     }
@@ -79,6 +85,7 @@ section#tips {
             font-size: 1rem; 
             padding: 1rem 3rem;
             text-align: left;
+            
 
         }
         

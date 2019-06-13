@@ -1,0 +1,109 @@
+
+
+#footer {
+    margin-top: 5rem; 
+    width: 100%; 
+    background: $blueGradient;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    .flex-me {
+        width: calc(100%/3);
+        @media screen and (max-height: 890px){
+            width: 100%;
+            margin-top: 1rem;  
+        }
+        i {
+            display: flex; 
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            margin-right: 1rem; 
+            &:last-child {
+                margin-right: 0rem; 
+            }
+        }
+        img {
+            margin: auto; 
+        }
+    }
+    .social-media {
+        display: flex;
+        justify-content: center;
+    }
+    div.footer-links-wrapper {
+        width: 100%;
+        margin: auto; 
+        background: black; 
+        padding: 2rem; 
+        .mw77 {
+            display: flex;
+            justify-content: space-between;
+            @media screen and (max-height: 890px){
+                flex-direction: column; 
+            }
+        }
+    }
+    h6 {
+        color: white; 
+    }
+    ul {
+        display: inline-block;
+        margin: 0 auto; 
+        text-align: center; 
+        li { 
+            list-style-type: none;
+            a {
+                text-decoration: none; 
+                color: white; 
+                font-size: .9rem; 
+            }
+        }
+    }
+    #signup {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 0;
+        flex-direction: column;
+        form {
+            display: flex; 
+            width: 35%;
+            margin: auto; 
+            margin-top: 2rem;
+
+            input[type='email'] {
+                height: 3rem;
+                width: 100%; 
+                border-radius: 1rem 0 0 1rem;
+                border: none; 
+                padding: 1rem;  
+            }
+            input[type='submit'] {
+                background: #FFBB00; 
+                border: none;
+                outline: none;
+                padding: 0 2rem;
+                color: white;
+                font-weight: bold; 
+                border-radius: 0 1rem 1rem 0; 
+                text-transform: uppercase;
+            }
+        }
+
+        h3 {
+            padding-bottom: 1.5rem;
+            font-size: 1.5rem;
+            color: white; 
+        }
+    }
+    img {
+        display: block;
+    }
+
+    
+    
+}

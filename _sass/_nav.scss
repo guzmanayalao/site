@@ -8,6 +8,68 @@ nav {
     justify-content: space-between;
     padding:1rem 3rem; 
     align-items: center;
+    
+    .menu-active {
+        transform: scale(1) !important;
+        display: flex !important;
+        transition: transform .3s;
+    }
+    .menu {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background: $blueGradientTrans2;
+        display: flex;
+        transform: scale(0);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        font-weight: 900;
+        padding: 2rem;
+        text-align: center;
+        transition: transform .3s;
+        z-index: 3; 
+        li {
+            list-style-type: none;
+            margin: 1rem 0;
+            cursor: pointer;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+            transition: color .2s;
+            &:hover {
+                cursor: pointer;
+                transition: color .2s;
+            }
+        }
+    }
+    .hamburger {
+        position: relative;
+        z-index: 4;
+        background: white; 
+        color: black;
+        padding: 1rem;
+        
+        width: 4rem;
+        border-radius: 2rem 1rem; 
+        cursor: pointer;
+        .icon-active {
+            color: black;
+        }
+        @media screen and (max-width: 49.375rem) {
+            display: block;
+            justify-content: space-around;
+        }
+    }
+    @media screen and (max-width: 78rem) {
+        width: 100%;
+        overflow: hidden;
+    }
     ul {
         list-style-type: none;
         li {
