@@ -1,6 +1,11 @@
 section#tips {
     padding-top: 5rem;
-    
+    @media screen and (max-width: 600px){
+        padding-top: 3rem; 
+        text-align: left;
+       
+        
+    } 
     header {
         margin-bottom: 5rem; 
         p {
@@ -8,8 +13,8 @@ section#tips {
             line-height: 2; 
             text-align: center; 
             margin-bottom: 2rem;
-            @media screen and (max-width: 480px){
-                font-size: 1rem; 
+            @media screen and (max-width: 600px){
+                font-size: 1.25rem; 
     
                
                 
@@ -21,6 +26,11 @@ section#tips {
         font-size: 3.125rem;
         text-align: center; 
         margin-bottom: 2rem;
+        @media screen and (max-width: 600px){
+            text-align: left;
+            font-size: 2rem; 
+            
+        } 
     } 
     div.content {
         font-size: 2rem;
@@ -48,7 +58,15 @@ section#tips {
         min-height: 30rem;
         border-radius: 1rem;
         width: 23rem;
-
+        @media screen and (max-width: 600px){
+            width: 100%;  
+        }
+        @media screen and (max-width: 400px){
+            margin: 1rem 0;  
+        }
+        @media screen and (max-width: 77rem) {
+            margin-top: 2rem; 
+        }
         h3 {
             background: $blue;
             width: 100%; 
@@ -58,6 +76,9 @@ section#tips {
             color: white;
             font-size: 2rem; 
             border-radius: 1rem 1rem 0 0;
+            @media screen and (max-width: 600px){
+                font-size: 1.5rem; 
+            }
         }
         span {
             position: absolute;
@@ -85,7 +106,10 @@ section#tips {
             font-size: 1rem; 
             padding: 1rem 3rem;
             text-align: left;
-            
+            @media screen and (max-width: 400px){
+                padding: 1.5rem; 
+            }
+
 
         }
         

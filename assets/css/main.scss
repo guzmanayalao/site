@@ -26,7 +26,13 @@ body {
 .body-menu-active {
     overflow: hidden;
 }
-
+p {
+    @media screen and (max-width: 600px){
+        text-align: left !important; 
+       
+        
+    }
+}
 *{
     padding: 0;
     margin: 0; 

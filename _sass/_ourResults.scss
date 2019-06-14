@@ -3,7 +3,9 @@ section#ourResults {
     position: relative;
     width: 100%;
     overflow: hidden; 
-    
+    @media screen and (max-width: 600px){
+        padding-top: 3rem; 
+    }
     header {
         margin-bottom: 1rem; 
     }
@@ -11,14 +13,20 @@ section#ourResults {
         font-size: 3.125rem;
         text-align: center; 
         margin-bottom: 2rem;
+        @media screen and (max-width: 600px){
+            text-align: left;
+           font-size: 2rem; 
+            
+        } 
     } 
     p {
         font-size: 2rem;
         line-height: 2; 
         text-align: center; 
         margin-bottom: 2rem;
-        @media screen and (max-width: 440px){
-            font-size: 1.5rem; 
+        @media screen and (max-width: 600px){
+            font-size: 1.25rem; 
+            text-align: left;
            
             
         } 

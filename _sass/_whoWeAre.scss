@@ -1,7 +1,14 @@
 section#whoWeAre {
     background: $blueGradient; 
     position: relative;
-    padding: 2rem; 
+    padding: 5rem 0rem; 
+    @media screen and (max-width: 600px){
+        padding-top: 3rem; 
+        text-align: left; 
+
+       
+        
+    }
     > img {
         position: absolute; 
         max-width: 1560px;
@@ -25,14 +32,22 @@ section#whoWeAre {
         font-size: 3.125rem;
         text-align: center; 
         margin-bottom: 2rem;
+        @media screen and (max-width: 600px){
+            margin-bottom: 1rem; 
+            text-align: left; 
+            font-size: 2rem; 
+
+           
+            
+        }
          
     } 
     p {
         font-size: 2rem;
         line-height: 2; 
         text-align: center; 
-        @media screen and (max-width: 440px){
-            font-size: 1.5rem; 
+        @media screen and (max-width: 600px){
+            font-size: 1.25rem; 
 
            
             

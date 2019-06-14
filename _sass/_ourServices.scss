@@ -1,6 +1,8 @@
 section#ourServices {
     padding-top: 6rem;
-    
+    @media screen and (max-width: 600px){
+        padding-top: 3rem; 
+    }
     header {
         margin-bottom: 5rem; 
     }
@@ -8,13 +10,17 @@ section#ourServices {
         font-size: 3.125rem;
         text-align: center; 
         margin-bottom: 2rem;
+        @media screen and (max-width: 600px){
+            text-align: left; 
+            font-size: 2rem; 
+        }
     } 
     p {
         font-size: 2rem;
         line-height: 2; 
         text-align: center;
-        @media screen and (max-width: 440px){
-            font-size: 1.5rem; 
+        @media screen and (max-width: 600px){
+            font-size: 1.25rem; 
            
             
         } 
@@ -34,7 +40,12 @@ section#ourServices {
         min-height: 30rem;
         border-radius: 1rem;
         width: 23rem;
-
+        @media screen and (max-width: 600px){
+            width: 100%;  
+        }
+        @media screen and (max-width: 400px){
+            margin: 1rem 0;  
+        }
         @media screen and (max-width: 77rem) {
             margin-top: 2rem; 
         }
@@ -44,10 +55,14 @@ section#ourServices {
             width: 100%; 
             display: flex;
             justify-content: center; 
-            padding: 2rem 1rem;
+            padding: 2.25rem 1rem;
             color: white;
             font-size: 2rem; 
             border-radius: 1rem 1rem 0 0;
+            text-align: center;
+            @media screen and (max-width: 600px){
+                font-size: 1.5rem; 
+            }
         }
         span {
             position: absolute;
@@ -75,6 +90,9 @@ section#ourServices {
             font-size: 1rem; 
             padding: 3rem;
             text-align: left;
+            @media screen and (max-width: 400px){
+                padding: 1.5rem; 
+            }
 
         }
         
