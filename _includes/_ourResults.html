@@ -5,7 +5,11 @@
             <h1>{{ page.ourResultsSectionTitle }}</h1>
         </header>
         <p>{{ page.ourResultsSectionBlurb }}</p>
-
+        <div class="partners">
+            {% for parnter in site.partners %}
+            <img src="{{site.baseurl}}{{partner.img}}" alt="">
+            {% endfor %}
+        </div>    
         <div class="slick-container">
             {% for project in site.work%}
             <article>
