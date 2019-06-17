@@ -3,6 +3,36 @@ section#ourResults {
     position: relative;
     width: 100%;
     overflow: hidden; 
+    .partners {
+        margin-bottom: 2rem;
+        padding: 5rem 0rem;
+        background: #e7ecf0;
+        @media screen and (max-width: 600px){
+            margin-bottom: 1rem; 
+            padding: 2rem 0rem;
+
+        }
+        h1 {
+            font-size: 2rem;
+            color:  #c3c3c3;
+            text-align: center;
+        }
+        .mw77 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            @media screen and (max-width: 600px){
+                flex-direction: column;
+                padding-top: 0;
+            }
+            img {
+                max-width: 15rem;
+                padding-bottom: .5rem;
+            }
+        }
+        
+    }
     @media screen and (max-width: 600px){
         padding-top: 3rem; 
     }

@@ -1,15 +1,25 @@
 
-<section id="ourResults">
-    <div class="mw77">
-        <header>
+<section id="ourResults" >
+    <div class="mw77" >
+        <header >
             <h1>{{ page.ourResultsSectionTitle }}</h1>
         </header>
         <p>{{ page.ourResultsSectionBlurb }}</p>
-        <div class="partners">
-            {% for parnter in site.partners %}
-            <img src="{{site.baseurl}}{{partner.img}}" alt="">
-            {% endfor %}
-        </div>    
+    </div>
+    <article class="partners">
+        <header>
+            <h1>Our Partners</h1>
+        </header>
+        <div class="mw77">
+            {%comment%}<img src="{{site.baseurl}}{{partner.img}}" alt="">{%endcomment%}
+            <img src="{{site.basurl}}assets/images/logo-reverse-tint.png" alt="">
+
+            <img src="{{site.basurl}}assets/images/logo-reverse-tint.png" alt="">
+
+            <img src="{{site.basurl}}assets/images/logo-reverse-tint.png" alt="">
+        </div>
+    </article>   
+    <div class="mw77 wow slideInUp" data-wow-offset="100"> 
         <div class="slick-container">
             {% for project in site.work%}
             <article>
@@ -28,5 +38,4 @@
 
         </div>
     </div>
-
 </section>

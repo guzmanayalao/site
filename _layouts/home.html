@@ -8,15 +8,70 @@
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/animate.css">
     <script src="https://kit.fontawesome.com/b680b6f5b8.js"></script>
 
 
     <title>Document</title>
+    <style>
+        .wow {
+        visibility: hidden;
+        }
+        #page {
+            display: none;
+        }
+        #loader {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            height: 100vh;
+        }
+        .lds-facebook {
+        display: inline-block;
+        position: relative;
+        width: 64px;
+        height: 64px;
+        }
+        .lds-facebook div {
+        display: inline-block;
+        position: absolute;
+        left: 6px;
+        width: 13px;
+        background: rgb(58, 58, 58);
+        animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+        }
+        .lds-facebook div:nth-child(1) {
+        left: 6px;
+        animation-delay: -0.24s;
+        }
+        .lds-facebook div:nth-child(2) {
+        left: 26px;
+        animation-delay: -0.12s;
+        }
+        .lds-facebook div:nth-child(3) {
+        left: 45px;
+        animation-delay: 0;
+        }
+        @keyframes lds-facebook {
+        0% {
+            top: 6px;
+            height: 51px;
+        }
+        50%, 100% {
+            top: 19px;
+            height: 26px;
+        }
+        }
+
+    </style>
 </head>
 
-<body>
-
-    <main>
+<body onload="loader()">
+    <div id="loader">
+        <div class="lds-facebook"><div></div><div></div><div></div></div>    
+    </div>
+    <main id="page" >
         {% include _header.html %}
         {% include _ourServices.html %}
         {% include _ourResults.html %}
@@ -34,10 +89,17 @@
     crossorigin="anonymous"></script>
     
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="{{site.baseurl}}/assets/js/wow.min.js"></script>
 
     <script>   
-    
+        
+        function loader() {
+                document.getElementById("page").style.display = "block";
+                document.getElementById("loader").style.display = "none";
+        }
         $(function(){
+
+
             $('.slick-container').slick({
                 slidesToShow: 2,
                 slidesToScroll: 1,
@@ -126,7 +188,12 @@
 	
         })
     </script>
-    
+
+    <script>
+            wow = new WOW();
+            
+            wow.init();
+    </script>
 </body>
 
 </html>
