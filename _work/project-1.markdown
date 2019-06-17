@@ -1,7 +1,7 @@
 ---
-title: Project 1
+title: 50Fifth Asset Management
 date: 2019-06-10 03:23:00 Z
-Images: "/uploads/action-plan-brainstorming-complex-212286.jpg"
+Images: "/uploads/aerial-aerial-shot-architecture-1642125.jpg"
 ---
 
-Lorem
+We developed and designed an asset management website for 50Fifth. We also created them a really awesome logo. 
