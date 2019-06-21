@@ -6,6 +6,23 @@
         </header>
         <p>{{ page.ourResultsSectionBlurb }}</p>
     </div>
+    
+    <div class="mw77" > 
+        <div class="slick-container">
+            {% for project in site.work%}
+            <article style="background: url('{{site.baseurl}}{{project.Images}}'); background-size: cover; ">
+                <header>
+                    <h3>{{ project.title}}</h3>
+                    {{ project.content | markdownify }}
+                    <a href="">Project Link</a>
+
+                </header>
+            </article>
+            {% endfor %}
+            
+
+        </div>
+    </div>
     <article class="partners">
         <header>
             <h1>Our Partners</h1>
@@ -19,23 +36,4 @@
             <img src="{{site.basurl}}assets/images/logo-reverse-tint.png" alt="">
         </div>
     </article>   
-    <div class="mw77 wow slideInUp" data-wow-offset="100"> 
-        <div class="slick-container">
-            {% for project in site.work%}
-            <article>
-                <header>
-                    <h3>{{ project.title}}</h3>
-                    {{ project.content | markdownify }}
-                    <a href="">Project Link</a>
-
-                </header>
-                <div>
-                    <img src="{{ site.baseurl }}{{ project.Images }}" alt="">
-                </div>
-            </article>
-            {% endfor %}
-            
-
-        </div>
-    </div>
 </section>

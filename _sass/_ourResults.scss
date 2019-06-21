@@ -1,12 +1,12 @@
 section#ourResults {
-    padding: 6rem 0;
+    padding: 6rem 0 0 0;
     position: relative;
     width: 100%;
     overflow: hidden; 
     .partners {
-        margin-bottom: 2rem;
+        margin-top: 2rem; 
         padding: 5rem 0rem;
-        background: #e7ecf0;
+        background: #f1f1f1;
         @media screen and (max-width: 600px){
             margin-bottom: 1rem; 
             padding: 2rem 0rem;
@@ -71,6 +71,8 @@ section#ourResults {
             position: relative;
             color: white;            
             width: 100%; 
+            height: 20rem;
+            border-radius: 1rem; 
             @media screen and (max-width: 600px){
                 margin:0;
             }
@@ -87,6 +89,9 @@ section#ourResults {
 
                 h3 {
                     font-size: 2rem; 
+                    @media screen and (max-width: 800px){
+                        font-size: 1.5rem;
+                    }
                 }
                 p {
                     font-size: 1rem; 
